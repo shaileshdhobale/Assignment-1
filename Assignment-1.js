@@ -28,7 +28,7 @@ fs.readFile('student.json', 'utf8', function (err, data) {
 	       	}
 	       	obj = JSON.parse(data);
 	       	for(i=0;i<obj.students.length;i++){
-       			if (obj.students[i].id != undefined && obj.students[i].fName != undefined && obj.students[i].lName != undefined && obj.students[i].score != undefined && (isNaN(obj.students[i].score))){
+       			if (obj.students[i].id != undefined && obj.students[i].fName != undefined && obj.students[i].lName != undefined && obj.students[i].score != undefined ) {
 	       			value = obj.students[i].id+" | "+obj.students[i].fName+" | "+obj.students[i].lName+" | "+obj.students[i].score;
 	       		 	fs.appendFile('destination.txt',value+"\r\n", function(err,fd) {
 						if (err) {
@@ -45,10 +45,6 @@ fs.readFile('student.json', 'utf8', function (err, data) {
 	function sortObject(obj) {
 		try{
 			for (i = 0; i < obj.students.length; i += 1){
-				// if(isNaN(obj.students[j].score)){
-				// 	console.log('dfsd');
-				// 	continue;
-				// }
 				for (j = 0; j < (obj.students.length - i - 1); j += 1) {
 		    		if (obj.students[j].score < obj.students[j + 1].score) {
 			        	temp = obj.students[j];
