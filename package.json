@@ -1,0 +1,16 @@
+{
+  "name": "assignment-1.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Assignment-1.js",
+  "dependencies": {
+    "xml2js": "^0.4.12",
+    "fs": "^0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shailesh",
+  "license": "ISC"
+}

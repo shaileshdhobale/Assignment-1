@@ -1,0 +1,70 @@
+Lab NODE 1
+
+Objective:
+
+A flat file contains student records in JSON format. Write a program to parse and process these student records. This lab session involves File IO, Handling of JSON Strings, and XML Documents in Node.js.
+
+Requirements: Part 1:
+
+Assume, there is a JSON file (source.json) that contains student records along with scores of each student such as:
+
+"students": 
+	[
+		{
+			"id": 123,
+			"fName": "John",
+			"lName": "Doe",
+			"score": 234
+		},
+		{
+			"id": 124,
+			"fName": "Jane",
+			"lName": "Doe",
+			"score": 543
+		},
+		{
+			"id": 125,
+			"fName": "Jackie",
+			"lName": "Doe",
+			"score": 453
+		}
+	]
+}
+
+The program should write each record to a output file (destination.txt) in the following format
+
+First Name | Last Name | Score
+123 | John | Doe | 234
+124 | Jane | Doe | 543
+125 | Jackie | Doe | 453
+
+
+Requirements: Part 2:
+We extend the Part 1 to  sort all the students based on their score (descending sort).
+
+The program should write the sorted output to the destination.txt file as follows:
+
+Id | First Name | Last Name | Score
+124 | Jane | Doe | 543
+125 | Jackie | Doe | 453
+123 | John | Doe | 234
+
+
+Requirements: Part 3:
+
+We extend the Part 2 to generate an XML output in the destination.xml file as follows:
+
+<students>
+ <student id="124">
+   <name>Jane Doe</name>
+   <score>543</score>
+ </student>
+ <student id="125">
+   <name>Jackie Doe</name>
+   <score>453</score>
+ </student>
+ <student id="123">
+   <name>John Doe</name>
+   <score>234</score>
+ </student>
+</students>

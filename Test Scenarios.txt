@@ -1,0 +1,17 @@
+Handled all these scenarios
+
+1. It is unable to find / read the source file?
+ - It will show error  message on console.
+2. If the source file does not have a JSON string in it?
+ - Print message that JSON file is not in correct format.
+3. If the source file contains JSON, but is not in the expected structure?
+ - Print message that JSON structure is not in expected form
+4. If you are unable to write to the destination file due to lack of write permissions?
+ - Then will show the message that you dont have permission to write and runs remainning
+   code. 
+5. If your source file has non-english characters?
+ - XML and text file also able to store non-english characters.
+6. If certain keys are missing in the student records (say, score is missing)?
+ - Then its unale to sort JSON object.
+7. If the source file has a very, very, large number of records. Say a million records? Does your program still function as expected?
+ - Program behaviour also depends upon sorting technique.
